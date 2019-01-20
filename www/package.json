@@ -1,0 +1,15 @@
+{
+  "name": "foud-www",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "clean": "rm -rf dist .next",
+    "now-build": "next build && next export -o dist"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1"
+  }
+}
