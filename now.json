@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name": "foud.org",
-  "builds": [{ "use": "@now/static-build", "src": "www/package.json" }],
-  "routes": [{ "src": "/(.*)", "dest": "www/$1" }],
-  "alias": ["foud.org"]
-}
