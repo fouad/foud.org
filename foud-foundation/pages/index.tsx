@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Head from "next/head";
+import Layout from "../components/Layout";
 
 export default function Home() {
   // ----- Form state -----
@@ -33,33 +33,10 @@ export default function Home() {
   }
 
   return (
-    <>
-      <Head>
-        <title>Foud Foundation – Fruit Drops for SF Engineers</title>
-        <meta
-          name="description"
-          content="Foud Foundation delivers healthy fruit drops to underfed software engineers across San Francisco, promoting well-being and productivity."
-        />
-      </Head>
-
-      {/* Top header */}
-      <header>
-        <div className="bg-emerald-800 text-white text-center py-3">
-          <h1 className="text-lg sm:text-xl font-semibold">Foud Foundation</h1>
-          <p className="text-xs sm:text-sm opacity-80">Delivering Fruit Drops to SF Engineers</p>
-        </div>
-        <nav className="bg-emerald-700 text-emerald-50 text-sm sm:text-base">
-          <ul className="flex justify-center gap-6 py-2">
-            <li className="hover:text-white cursor-pointer">Home</li>
-            <li className="hover:text-white cursor-pointer">Fruit Drops</li>
-            <li className="hover:text-white cursor-pointer">Our Impact</li>
-            <li className="hover:text-white cursor-pointer">Get Involved</li>
-          </ul>
-        </nav>
-      </header>
-
-      {/* Main content */}
-      <main className="flex flex-col items-center px-4 sm:px-6 md:px-8 bg-gradient-to-b from-white via-emerald-50 to-emerald-100">
+    <Layout
+      title="Foud Foundation – Fruit Drops for SF Engineers"
+      description="Foud Foundation delivers healthy fruit drops to underfed software engineers across San Francisco, promoting well-being and productivity."
+    >
         {/* Hero */}
         <section className="w-full max-w-4xl text-center my-12 sm:my-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-900">
@@ -218,20 +195,6 @@ export default function Home() {
             Learn More or Get Involved
           </p>
         </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="text-center text-xs bg-emerald-800 text-emerald-50 py-8">
-        <div className="space-y-1 mb-4">
-          <p>Contact Us</p>
-          <p>44 Tehama St, San Francisco, CA 94105</p>
-          <p>Email: hello@foud.org</p>
-          <p>Phone: (415) 555-0123</p>
-        </div>
-        <div className="bg-emerald-900 py-2 mt-2">
-          © {new Date().getFullYear()} Foud Foundation. All rights reserved.
-        </div>
-      </footer>
-    </>
+    </Layout>
   );
 }
