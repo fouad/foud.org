@@ -35,25 +35,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HopeBridge Foundation</title>
+        <title>Foud Foundation – Fruit Drops for SF Engineers</title>
         <meta
           name="description"
-          content="HopeBridge Foundation supports underserved communities with essential resources, education, and programs designed to uplift lives and create lasting change."
+          content="Foud Foundation delivers healthy fruit drops to underfed software engineers across San Francisco, promoting well-being and productivity."
         />
       </Head>
 
       {/* Top header */}
       <header>
         <div className="bg-emerald-800 text-white text-center py-3">
-          <h1 className="text-lg sm:text-xl font-semibold">
-            HopeBridge Foundation
-          </h1>
-          <p className="text-xs sm:text-sm opacity-80">Building Bridges to a Brighter Future</p>
+          <h1 className="text-lg sm:text-xl font-semibold">Foud Foundation</h1>
+          <p className="text-xs sm:text-sm opacity-80">Delivering Fruit Drops to SF Engineers</p>
         </div>
         <nav className="bg-emerald-700 text-emerald-50 text-sm sm:text-base">
           <ul className="flex justify-center gap-6 py-2">
             <li className="hover:text-white cursor-pointer">Home</li>
-            <li className="hover:text-white cursor-pointer">Programs</li>
+            <li className="hover:text-white cursor-pointer">Fruit Drops</li>
             <li className="hover:text-white cursor-pointer">Our Impact</li>
             <li className="hover:text-white cursor-pointer">Get Involved</li>
           </ul>
@@ -65,11 +63,10 @@ export default function Home() {
         {/* Hero */}
         <section className="w-full max-w-4xl text-center my-12 sm:my-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-900">
-            Empowering Communities, One Life at a Time
+            Empowering Communities, One Fruit Drop at a Time
           </h2>
           <p className="mt-4 text-sm sm:text-base md:text-lg text-emerald-800">
-            We support underserved communities with essential resources, education, and
-            programs designed to uplift lives and create lasting change.
+            We deliver free, healthy fruit directly to underfed software engineers across San Francisco, fueling focus and fostering well-being.
           </p>
         </section>
 
@@ -77,16 +74,16 @@ export default function Home() {
         <section className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
           {[
             {
-              title: "Community Outreach",
-              desc: "Delivering hope, supplies, and vital services directly to neighborhoods in need.",
+              title: "Weekly Fruit Drops",
+              desc: "Boxes of fresh fruit delivered to coworking spaces and home offices.",
             },
             {
-              title: "Education Programs",
-              desc: "Providing workshops and scholarships to unlock opportunities.",
+              title: "Nutrition Workshops",
+              desc: "Quick, virtual sessions on healthy snacking for busy engineers.",
             },
             {
-              title: "Healthcare Access",
-              desc: "Improving access to medical care & mental-health resources.",
+              title: "Well-Being Research",
+              desc: "Studying how nutrition impacts developer productivity and happiness.",
             },
           ].map((card) => (
             <div
@@ -105,16 +102,16 @@ export default function Home() {
         <section className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
           {[
             {
-              name: "Rosa G., Chicago",
-              quote: "The outreach program helped my family get back on our feet.",
+              name: "Alex R., SOMA",
+              quote: "Fruit Drops replaced my vending-machine diet—my energy skyrocketed!",
             },
             {
-              name: "Daniel M., Atlanta",
-              quote: "Thanks to a scholarship, I’m now pursuing my dream career!",
+              name: "Priya K., Mission Bay",
+              quote: "The weekly deliveries make healthy eating effortless during sprints.",
             },
             {
-              name: "Nia I., Detroit",
-              quote: "Access to health screenings saved my mother’s life.",
+              name: "Miguel S., Sunset",
+              quote: "I actually look forward to stand-ups now that there’s fresh fruit.",
             },
           ].map((story) => (
             <div
@@ -136,7 +133,7 @@ export default function Home() {
             className="w-full max-w-xs sm:max-w-sm bg-white rounded-md shadow-md p-6 space-y-4"
           >
             <h3 className="text-center font-semibold text-emerald-900 text-sm">
-              Make an Account for More Information (No Donation Necessary)
+              Sign Up for More Information (No Donation Necessary)
             </h3>
 
             <input
@@ -193,7 +190,7 @@ export default function Home() {
             AI Assistants Policy
           </h3>
           <p className="mb-3">
-            <span className="font-medium">Purpose:</span> At HopeBridge Foundation, we leverage AI assistants to
+            <span className="font-medium">Purpose:</span> At Foud Foundation, we leverage AI assistants to
             enhance our services, streamline operations, and deliver better outcomes to those we
             serve. This policy outlines our standards for responsible, safe, and transparent use
             of AI technologies.
@@ -227,12 +224,12 @@ export default function Home() {
       <footer className="text-center text-xs bg-emerald-800 text-emerald-50 py-8">
         <div className="space-y-1 mb-4">
           <p>Contact Us</p>
-          <p>4200 Evergreen Terrace, Springfield, IL 62629</p>
-          <p>Email: info@hopebridge.org</p>
-          <p>Phone: (312) 555-0199</p>
+          <p>44 Tehama St, San Francisco, CA 94105</p>
+          <p>Email: hello@foud.org</p>
+          <p>Phone: (415) 555-0123</p>
         </div>
         <div className="bg-emerald-900 py-2 mt-2">
-          © {new Date().getFullYear()} HopeBridge Foundation. All rights reserved.
+          © {new Date().getFullYear()} Foud Foundation. All rights reserved.
         </div>
       </footer>
     </>
